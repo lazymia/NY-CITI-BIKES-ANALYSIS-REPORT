@@ -12,7 +12,7 @@ This project analyzes NY Citi Bike rental data to gain insights into customer be
 This analysis of NY Citi Bike rental data will follow a structured approach, involving data cleaning, SQL-based analysis, and Power BI visualizations.
 #### Data Collection and Cleaning with Excel
 Data was initially cleaned in Excel to ensure accuracy and uniformity. Steps included removing duplicate entries, addressing missing values, standardizing formats for consistency, and removing outliers to avoid skewed results.
-This prepared dataset ensures robust, reliable insights in the subsequent analysis and visualization phases.
+This prepared dataset ensures robust, reliable insights in the subsequent analysis and visualization phases. [Download Dataset](https://docs.google.com/spreadsheets/d/1zUn6JyFMLpNV41VofrZN1DIGajTdjyAwtmuibI0w4R8/edit?gid=249951387#gid=249951387)
 
 #### Data Analysis with SQL
 SQL queries were used to address the project’s main questions, such as identifying popular pick-up locations, evaluating trip durations by age group, and examining user behavior based on age and subscription type.
@@ -37,3 +37,8 @@ We explored the average trip duration across different age groups to uncover any
 The following table outlines the rental frequency by age group, highlighting which demographics use the service most often. As shown, middle-aged users, especially those in the 35-44 range, are the most frequent renters, which could inform targeted engagement strategies.
 
 <img width="201" alt="Screenshot 2024-11-08 at 19 34 07" src="https://github.com/user-attachments/assets/325d9bef-fc8d-477f-b98a-683d25759764">
+
+#### D. User Type and Weekly Rental Patterns
+To understand rental behavior across different days of the week, we analyzed usage patterns for one-time users and long-term subscribers. The table below shows the total rentals by each user type on each day of the week. Notably, long-term subscribers rent more frequently on weekdays. This insight can inform promotions and operational strategies aimed at each user group.
+
+<img width="336" alt="Screenshot 2024-11-08 at 19 44 32" src="https://github.com/user-attachments/assets/2d708caa-63bb-41f9-a55c-7a58e27337b4">
