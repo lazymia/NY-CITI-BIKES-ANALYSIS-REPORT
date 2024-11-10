@@ -59,3 +59,7 @@ Used a `GROUP BY` query on the start_station_name column, aggregating by `COUNT`
 The top 5 pick-up locations highlight areas of concentrated demand across New York City. Many of these stations are likely situated near high-traffic areas, such as business districts, major transit hubs, or popular tourist destinations. This insight indicates that proximity to these types of locations plays a significant role in driving rental frequency, as people are more likely to rent bikes in areas where they naturally congregate.
 
 <img width="379" alt="Screenshot 2024-11-10 151751" src="https://github.com/user-attachments/assets/760ab7cf-de9f-4406-b6d1-d9c69583c157">
+
+
+## Appendix
+<img width="578" alt="Screenshot 2024-11-10 161903" src="https://github.com/user-attachments/assets/10a0cdff-37e0-4c49-b762-f8b37e3cbb36">
