@@ -42,3 +42,9 @@ The following table outlines the rental frequency by age group, highlighting whi
 To understand rental behavior across different days of the week, we analyzed usage patterns for one-time users and long-term subscribers. The table below shows the total rentals by each user type on each day of the week. Notably, long-term subscribers rent more frequently on weekdays. This insight can inform promotions and operational strategies aimed at each user group.
 
 <img width="336" alt="Screenshot 2024-11-08 at 19 44 32" src="https://github.com/user-attachments/assets/2d708caa-63bb-41f9-a55c-7a58e27337b4">
+
+## ANALYSIS
+**1. Identifying Popular Pick-Up Locations**
+Used a `GROUP BY` query on the pickup_location column, aggregating by `COUNT` to find total rentals for each location. Then, sorted the results in descending order to identify the top locations.
+
+<img width="379" alt="Screenshot 2024-11-10 151751" src="https://github.com/user-attachments/assets/760ab7cf-de9f-4406-b6d1-d9c69583c157">
