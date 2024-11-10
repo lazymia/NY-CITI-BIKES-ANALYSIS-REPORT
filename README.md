@@ -1,6 +1,6 @@
 # NY-CITI-BIKES-ANALYSIS-REPORT
 
-## PROJECT DESCRIPTION
+## Project Description
 This project analyzes NY Citi Bike rental data to gain insights into customer behaviors, preferences, and usage patterns. By leveraging SQL, the project aims to answer key questions regarding popular pick-up locations, usage trends across age groups, rental frequency among different user categories, and the relationship between age and trip duration. Specifically, the analysis will focus on:
 - Identifying the most popular pick-up locations across New York City.
 - Examining variations in average trip duration across distinct age groups.
@@ -8,14 +8,23 @@ This project analyzes NY Citi Bike rental data to gain insights into customer be
 - Analyzing bike rental patterns across user types (one-time users vs. long-term subscribers) on each day of the week.
 - Investigating if and how user age influences the average duration of bike trips.
 
-## DESIGN
-This analysis of NY Citi Bike rental data will follow a structured approach, involving data cleaning, SQL-based analysis, and Power BI visualizations.
-#### Data Collection and Cleaning with Excel
-Data was initially cleaned in Excel to ensure accuracy and uniformity. Steps included removing duplicate entries, addressing missing values, standardizing formats for consistency, and removing outliers to avoid skewed results.
+## Tools and Methodology
+This analysis of NY Citi Bike rental data will follow a structured approach, involving data cleaning in Microsoft Excel, SQL-based analysis, and Power BI visualizations.
+
+#### Data Collection and Cleaning
+Data was initially cleaned in Excel to ensure accuracy and uniformity. Steps included;
+- removing duplicate entries
+- addressing missing values
+- standardizing formats for consistency, and
+- removing outliers to avoid skewed results.
+
 This prepared dataset ensures robust, reliable insights in the subsequent analysis and visualization phases. [Download Dataset](https://docs.google.com/spreadsheets/d/1zUn6JyFMLpNV41VofrZN1DIGajTdjyAwtmuibI0w4R8/edit?gid=249951387#gid=249951387)
 
 #### Data Analysis with SQL
-SQL queries were used to address the project’s main questions, such as identifying popular pick-up locations, evaluating trip durations by age group, and examining user behavior based on age and subscription type.
+SQL queries were used to address the project’s main questions, such as;
+- dentifying popular pick-up locations
+- evaluating trip durations by age group, and
+- examining user behavior based on age and subscription type
 
 #### Visualization and Reporting with Power BI
 Results were visualized in Power BI, providing clear and interactive visuals.
