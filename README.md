@@ -53,7 +53,9 @@ To understand rental behavior across different days of the week, we analyzed usa
 <img width="336" alt="Screenshot 2024-11-08 at 19 44 32" src="https://github.com/user-attachments/assets/2d708caa-63bb-41f9-a55c-7a58e27337b4">
 
 ## ANALYSIS
+#### In-Depth Insights:
 **1. Identifying Popular Pick-Up Locations**
-Used a `GROUP BY` query on the pickup_location column, aggregating by `COUNT` to find total rentals for each location. Then, sorted the results in descending order to identify the top locations.
+Used a `GROUP BY` query on the start_station_name column, aggregating by `COUNT` to find total rentals for each location. Then, sorted the results in descending order to identify the top locations. 
+The top 5 pick-up locations highlight areas of concentrated demand across New York City. Many of these stations are likely situated near high-traffic areas, such as business districts, major transit hubs, or popular tourist destinations. This insight indicates that proximity to these types of locations plays a significant role in driving rental frequency, as people are more likely to rent bikes in areas where they naturally congregate.
 
 <img width="379" alt="Screenshot 2024-11-10 151751" src="https://github.com/user-attachments/assets/760ab7cf-de9f-4406-b6d1-d9c69583c157">
