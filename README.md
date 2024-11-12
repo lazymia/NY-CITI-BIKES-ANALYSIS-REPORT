@@ -56,9 +56,36 @@ To understand rental behavior across different days of the week, we analyzed usa
 #### In-Depth Insights:
 **1. Identifying Popular Pick-Up Locations**
 Used a `GROUP BY` query on the start_station_name column, aggregating by `COUNT` to find total rentals for each location. Then, sorted the results in descending order to identify the top locations. 
+`Query:`
+``` SELECT distinct start_station_name, count(*) as num
+FROM citi_bikes_db.citi_bikes
+GROUP BY start_station_name
+ORDER BY num desc
+LIMIT 5;
+```
 The top 5 pick-up locations highlight areas of concentrated demand across New York City. Many of these stations are likely situated near high-traffic areas, such as business districts, major transit hubs, or popular tourist destinations. This insight indicates that proximity to these types of locations plays a significant role in driving rental frequency, as people are more likely to rent bikes in areas where they naturally congregate.
 
+A bar chart in Power BI displays the  pick-up locations with their rental counts. This visual makes it easy to see which locations have the highest demand and could help with resource allocation or marketing in high-traffic areas.
+
 <img width="379" alt="Screenshot 2024-11-10 151751" src="https://github.com/user-attachments/assets/760ab7cf-de9f-4406-b6d1-d9c69583c157">
+`Figure 1: Top Pick-Up Locations by Rental Count`
+
+**2. Average Trip Duration by Age Group**
+Calculated the average trip duration by using AVG(trip_duration) and grouped results by age_group.
+A line graph illustrates how the average trip duration varies across age groups. A line graph with age on the x-axis and average trip duration on the y-axis makes it easy to see any trend of decreasing or increasing trip duration.
+
+<img width="349" alt="Screenshot 2024-11-12 at 12 39 59" src="https://github.com/user-attachments/assets/1fb3cb08-83a2-4b96-85e5-a01b4524d9ae">
+`Figure 2: Average Trip Duration by Age Group`
+
+**3. Rental Frequency by Age Group**
+To find the rental frequency by age group, a GROUP BY query was used on the age_group column with a COUNT function to determine total rentals per group. This gives insight into which demographics are the most frequent renters.
+
+## Recommendations
+- This analysis supports expanding Citi Bike stations in similar high-traffic areas across the city. By applying the characteristics of these top locations—such as proximity to transit hubs and popular destinations, NY Citi Bike can strategically plan new station placements to maximize usage and improve accessibility for users.
+- If certain age groups demonstrate higher rental frequency, Citi Bike could develop targeted marketing campaigns to cater to these demographics. For example, offering loyalty rewards, personalized emails, or promotions for these groups may increase user retention and engagement.
+- Age groups that tend to have longer average trip durations may appreciate features like scenic route suggestions, bike models with enhanced comfort features, or partnerships with local attractions to encourage recreational riding. Providing these could help maintain and increase user satisfaction within these demographics.
+- For age groups with varying trip durations, Citi Bike could consider flexible pricing models that cater to both short-distance commuters and longer-distance recreational riders. Offering packages or passes tailored to different trip duration patterns could encourage more frequent use.
+- For age groups with lower rental frequencies, Citi Bike might create initiatives or community programs to increase engagement. These could include partnerships with local organizations, senior-focused fitness programs, or educational events to introduce Citi Bike as a practical and enjoyable transportation option.
 
 
 ## Appendix
