@@ -22,8 +22,9 @@ This prepared dataset ensures robust, reliable insights in the subsequent analys
 
 #### Data Analysis with SQL
 SQL queries were used to address the project’s main questions, such as;
-- dentifying popular pick-up locations
-- evaluating trip durations by age group, and
+- identifying popular pick-up locations
+- evaluating trip durations by age group
+- determining which age group rents bikes most frequently
 - examining user behavior based on age and subscription type
 
 #### Visualization and Reporting with Power BI
@@ -31,7 +32,7 @@ Results were visualized in Power BI, providing clear and interactive visuals.
 The dashboard featured insights on pick-up hotspots, age-based rental trends, and weekly patterns among different user groups. Power BI's interactive features will allow stakeholders to explore these findings in-depth, aiding in decision-making.
 
 
-## FINDINGS
+## Findings
 #### A. Top 5 Pick-Up Locations
 To identify the most popular pick-up locations across New York City, we analyzed rental frequency by station. The table below displays the top five pick-up locations, ranked by the total number of rentals. This insight helps us understand where demand is highest, which may guide future station placement and marketing efforts.
 
@@ -52,7 +53,7 @@ To understand rental behavior across different days of the week, we analyzed usa
 
 <img width="336" alt="Screenshot 2024-11-08 at 19 44 32" src="https://github.com/user-attachments/assets/2d708caa-63bb-41f9-a55c-7a58e27337b4">
 
-## ANALYSIS
+## Analysis
 #### In-Depth Insights:
 **1. Identifying Popular Pick-Up Locations**
 Used a `GROUP BY` query on the start_station_name column, aggregating by `COUNT` to find total rentals for each location. Then, sorted the results in descending order to identify the top locations. 
@@ -86,6 +87,11 @@ To find the rental frequency by age group, a GROUP BY query was used on the age_
 - Age groups that tend to have longer average trip durations may appreciate features like scenic route suggestions, bike models with enhanced comfort features, or partnerships with local attractions to encourage recreational riding. Providing these could help maintain and increase user satisfaction within these demographics.
 - For age groups with varying trip durations, Citi Bike could consider flexible pricing models that cater to both short-distance commuters and longer-distance recreational riders. Offering packages or passes tailored to different trip duration patterns could encourage more frequent use.
 - For age groups with lower rental frequencies, Citi Bike might create initiatives or community programs to increase engagement. These could include partnerships with local organizations, senior-focused fitness programs, or educational events to introduce Citi Bike as a practical and enjoyable transportation option.
+
+### Conclusion
+The analysis of average trip duration and rental frequency by age group reveals distinct usage patterns among different demographics, providing valuable insights for optimizing the Citi Bike service. Younger age groups appear to use Citi Bike more frequently, likely for shorter commutes, while older age groups, though less frequent users, tend to take longer, possibly more leisurely trips. These insights suggest that Citi Bike serves both practical commuting needs and recreational interests, highlighting the versatility of the service.
+
+By aligning station placement, bike availability, and marketing strategies with the preferences of each age group, Citi Bike can enhance user satisfaction and increase engagement across its diverse user base. Targeted efforts, such as introducing flexible pricing models, promoting scenic routes, and tailoring marketing campaigns, will help create a more inclusive and user-focused service. These strategic adjustments can drive higher ridership, promote customer loyalty, and support Citi Bike’s continued growth as a leading urban mobility solution in New York City.
 
 
 ## Appendix
