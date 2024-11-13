@@ -69,13 +69,19 @@ The top 5 pick-up locations highlight areas of concentrated demand across New Yo
 A bar chart in Power BI displays the  pick-up locations with their rental counts. This visual makes it easy to see which locations have the highest demand and could help with resource allocation or marketing in high-traffic areas.
 
 <img width="379" alt="Screenshot 2024-11-10 151751" src="https://github.com/user-attachments/assets/760ab7cf-de9f-4406-b6d1-d9c69583c157">
+
 `Figure 1: Top Pick-Up Locations by Rental Count`
 
 **2. Average Trip Duration by Age Group**
 Calculated the average trip duration by using AVG(trip_duration) and grouped results by age_group.
 A line graph illustrates how the average trip duration varies across age groups. A line graph with age on the x-axis and average trip duration on the y-axis makes it easy to see any trend of decreasing or increasing trip duration.
-
+``` SELECT age_groups, ROUND(AVG(trip_duration)) AS average_duration
+FROM citi_bikes_db.citi_bikes
+GROUP BY age_groups
+ORDER BY 2 DESC;
+```
 <img width="349" alt="Screenshot 2024-11-12 at 12 39 59" src="https://github.com/user-attachments/assets/1fb3cb08-83a2-4b96-85e5-a01b4524d9ae">
+
 `Figure 2: Average Trip Duration by Age Group`
 
 **3. Rental Frequency by Age Group**
